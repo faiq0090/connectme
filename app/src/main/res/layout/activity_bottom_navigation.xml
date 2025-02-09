@@ -22,8 +22,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_menu"
-        android:background="#ffffff"
-        app:itemIconSize="30dp"
+        style="@style/CustomBottomNavStyle"
+        android:background="#CEC9C9"
+        app:itemIconSize="20dp"
 
         />
 

@@ -184,6 +184,7 @@
                         android:id="@+id/ivPostImage"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
+                        android:src="@drawable/hiking"
                         android:scaleType="centerCrop"/>
 
                     <!-- Post Actions -->

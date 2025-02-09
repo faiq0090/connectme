@@ -17,6 +17,7 @@
 
         <ImageView
             android:layout_width="150dp"
+            android:id="@+id/applogo"
             android:layout_height="150dp"
             android:contentDescription="@string/chat_icons"
             android:src="@drawable/logo" />
@@ -27,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:id="@+id/welcomeText"
         android:text="@string/welcome"
         android:textColor="#2B1810"
         android:textSize="28sp"
@@ -36,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:id="@+id/welcomeSubText"
         android:text="@string/we_re_happy_to_see_you_please_login_to_continue"
         android:textColor="#666666"
         android:textSize="16sp" />
@@ -47,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/edit_text_background"
+        android:inputType="text"
         android:hint="@string/username"
         android:padding="12dp"
         android:textColorHint="#BBBBBB" />
@@ -94,6 +98,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/orText"
             android:text="@string/or_continue_with"
             android:textColor="#666666" />
 
@@ -107,20 +112,26 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="24dp"
+                android:id="@+id/googleIcon"
                 android:src="@drawable/social"
+                android:contentDescription="@string/googleicon"
                 android:padding="12dp"/>
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="24dp"
+                android:id="@+id/appleIcon"
                 android:src="@drawable/apple"
+                android:contentDescription="@string/appleicon"
                 android:padding="12dp"/>
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                android:id="@+id/facebookIcon"
                 android:src="@drawable/facebook"
+                android:contentDescription="@string/facebookicon"
                 android:padding="12dp"/>
         </LinearLayout>
     </LinearLayout>
@@ -135,12 +146,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/dontHaveAccount"
             android:text="@string/don_t_have_an_account"
             android:textColor="#666666" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/registerLink"
             android:text="@string/register"
             android:textColor="#6B4F3F"
             android:textStyle="bold" />

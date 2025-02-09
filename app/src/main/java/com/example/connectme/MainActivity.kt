@@ -15,18 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
-        // Set padding for system bars (e.g., status bar, navigation bar)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        val intent = Intent(this, Login::class.java)
+        startActivity(intent)
 
-        // Transition to Login activity after a short delay
-        Handler().postDelayed({
-            val intent = Intent(this, Login::class.java)
-            startActivity(intent)
-            finish()  // Close the MainActivity so the user cannot navigate back to it
-        }, 3000) // 1000 milliseconds = 1 second
+
     }
 }

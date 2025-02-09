@@ -87,6 +87,7 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginEnd="8dp"
+                            android:src="@drawable/default_profile"
                             android:background="@drawable/bg_circle_orange"
                             android:padding="1dp"/>
 
@@ -95,6 +96,7 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginEnd="8dp"
+                            android:src="@drawable/default_profile"
                             android:background="@drawable/bg_circle_gray"
                             android:padding="1dp"/>
 
@@ -103,6 +105,7 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginEnd="8dp"
+                            android:src="@drawable/default_profile"
                             android:background="@drawable/bg_circle_blue"
                             android:padding="1dp"/>
 
@@ -110,8 +113,25 @@
                             android:id="@+id/ivProfile4"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
+                            android:src="@drawable/default_profile"
                             android:background="@drawable/bg_circle_purple"
                             android:padding="1dp"/>
+                        <ImageView
+                            android:id="@+id/ivProfile5"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/default_profile"
+                            android:background="@drawable/bg_circle_gray"
+                            android:padding="1dp"/>
+                        <ImageView
+                            android:id="@+id/ivProfile6"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/default_profile"
+                            android:background="@drawable/bg_circle_blue"
+                            android:padding="1dp"/>
+
+
                     </LinearLayout>
                 </HorizontalScrollView>
 

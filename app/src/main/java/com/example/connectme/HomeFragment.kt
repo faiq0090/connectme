@@ -1,5 +1,6 @@
 package com.example.connectme
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,7 +26,9 @@ class HomeFragment : Fragment() {
 
         val imageView = view.findViewById<ImageView>(R.id.btnSend)
         imageView.setOnClickListener {
-            Toast.makeText(context, "Image Clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(activity, Dms::class.java)
+            startActivity(intent)
+
         }
     }
 

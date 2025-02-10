@@ -16,6 +16,9 @@
             android:name=".Dms"
             android:exported="false" />
         <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
             android:name=".bottom_navigation"
             android:exported="false" />
         <activity

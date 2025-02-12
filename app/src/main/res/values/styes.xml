@@ -6,4 +6,9 @@
         <item name="itemRippleColor">@android:color/transparent</item>
         <item name="android:background">@color/btm_gray</item>
     </style>
+    <!-- Styles -->
+    <style name="CircularImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

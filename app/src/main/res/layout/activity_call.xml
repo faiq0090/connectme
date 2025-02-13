@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:background="#E0E0E0"
+        android:background="@drawable/bottom_bar_background"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="16dp"
@@ -61,6 +61,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
+            android:contentDescription="more"
             android:background="@drawable/circle_button_gray"
             android:src="@drawable/ic_more" />
 
@@ -70,7 +71,8 @@
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/circle_button_gray"
-            android:src="@drawable/ic_camera" />
+            android:src="@drawable/ic_camera"
+            android:contentDescription="cemra"/>
 
         <ImageButton
             android:id="@+id/btnVolume"
@@ -78,6 +80,7 @@
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/circle_button_gray"
+            android:contentDescription="volume"
             android:src="@drawable/ic_volume" />
 
         <ImageButton
@@ -86,6 +89,7 @@
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/circle_button_gray"
+            android:contentDescription="mute"
             android:src="@drawable/ic_mute" />
 
         <ImageButton
@@ -93,6 +97,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@drawable/bg_circle_red"
+            android:contentDescription="end"
             android:src="@drawable/ic_call_end" />
 
     </LinearLayout>

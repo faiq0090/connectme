@@ -210,10 +210,10 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
+                    android:layout_height="48dp"
                     android:text="Invite"
                     android:textColor="#FFFFFF"
-                    android:background="@drawable/button_background"/>
+                    android:background="@drawable/rounded_button"/>
             </LinearLayout>
 
             <!-- Laura Ryan -->
@@ -239,10 +239,10 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
+                    android:layout_height="48dp"
                     android:text="Invite"
                     android:textColor="#FFFFFF"
-                    android:background="@drawable/button_background"/>
+                    android:background="@drawable/rounded_button"/>
             </LinearLayout>
 
             <!-- Christopher -->
@@ -268,10 +268,10 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
+                    android:layout_height="48dp"
                     android:text="Invite"
                     android:textColor="#FFFFFF"
-                    android:background="@drawable/button_background"/>
+                    android:background="@drawable/rounded_button"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

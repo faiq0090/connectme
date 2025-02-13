@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:background="#E0E0E0"
+        android:background="@drawable/bottom_bar_background"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="16dp"
@@ -70,6 +70,7 @@
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/circle_button_gray"
+            android:contentDescription="more"
             android:src="@drawable/ic_more" />
 
         <ImageButton
@@ -78,6 +79,7 @@
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/circle_button_gray"
+            android:contentDescription="cemra"
             android:src="@drawable/ic_camera" />
 
         <ImageButton
@@ -86,6 +88,7 @@
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/circle_button_gray"
+            android:contentDescription="volume"
             android:src="@drawable/ic_volume" />
 
         <ImageButton
@@ -94,6 +97,7 @@
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/circle_button_gray"
+            android:contentDescription="@string/chat_icons"
             android:src="@drawable/ic_mute" />
 
         <ImageButton
@@ -101,6 +105,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@drawable/bg_circle_red"
+            android:contentDescription="end"
             android:src="@drawable/ic_call_end" />
 
     </LinearLayout>

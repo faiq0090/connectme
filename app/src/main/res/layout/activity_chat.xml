@@ -20,11 +20,11 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/backButton"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/back"
+                android:background="@drawable/back"
                 android:contentDescription="Back" />
 
             <TextView
@@ -47,12 +47,11 @@
                 android:contentDescription="Call"
                 android:src="@drawable/telephone" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/videoButton"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/video"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/video"
                 android:layout_marginEnd="8dp"
                 android:contentDescription="Video Call" />
         </LinearLayout>
@@ -193,7 +192,7 @@
             android:hint="Typing..."
             android:padding="12dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray" />
+            android:textColorHint="@color/white" />
 
         <ImageView
             android:id="@+id/sendButton"

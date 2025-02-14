@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Connectme"
         tools:targetApi="31">
         <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
@@ -38,9 +41,6 @@
             android:exported="false" />
         <activity
             android:name=".bottom_navigation"
-            android:exported="false" />
-        <activity
-            android:name=".Signup"
             android:exported="false" />
         <activity
             android:name=".Login"

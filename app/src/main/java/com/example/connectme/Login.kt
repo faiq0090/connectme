@@ -26,7 +26,7 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
         //on click listener for register link
-        val clickMe: TextView = findViewById(R.id.registerLink)
+        val clickMe = findViewById<TextView>(R.id.registerLink)
         clickMe.setOnClickListener {
             val intent = Intent(this, Signup::class.java)
             startActivity(intent)

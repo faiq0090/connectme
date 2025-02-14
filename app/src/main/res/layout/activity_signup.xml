@@ -1,138 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:id="@+id/main"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="20dp"
+        android:id="@+id/main">
 
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="32dp"
-            android:id="@+id/logo"
-            android:contentDescription="@string/chat_icons"
-            android:src="@drawable/logo"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
+        <!-- Chat icon group at top -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:id="@+id/title"
-            android:text="@string/great"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#000000"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp">
 
+            <ImageView
+                android:id="@+id/applogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/chat_icons"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <!-- Welcome Text -->
         <TextView
+            android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:id="@+id/subtitle"
-            android:text="@string/we_re_so_excited_to_get_you_onboard"
-            android:textSize="16sp"
-            android:textColor="#666666"/>
+            android:layout_marginTop="30dp"
+            android:text="Great"
+            android:textColor="#2B1810"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/welcomeSubText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="We're so excited to see you on board"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <!-- Login Fields -->
         <EditText
             android:id="@+id/nameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Name"
             android:inputType="text"
-            android:padding="12dp"
-            android:textColorHint="#BBBBBB"/>
+            android:hint="Name"
+            android:padding="10dp"
+            android:textColorHint="#BBBBBB" />
 
         <EditText
             android:id="@+id/usernameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_background"
+            android:inputType="text"
             android:hint="Username"
-            android:padding="12dp"
-            android:textColorHint="#BBBBBB"/>
-
-        <EditText
-            android:id="@+id/phoneInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/edit_text_background"
-            android:hint="@string/phone_number"
-            android:inputType="phone"
-            android:padding="12dp"
-            android:textColorHint="#BBBBBB"/>
+            android:padding="10dp"
+            android:textColorHint="#BBBBBB" />
 
         <EditText
             android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Email"
             android:inputType="textEmailAddress"
-            android:padding="12dp"
-            android:textColorHint="#BBBBBB"/>
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColorHint="#BBBBBB" />
 
         <EditText
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Password"
             android:inputType="textPassword"
-            android:padding="12dp"
-            android:textColorHint="#BBBBBB"/>
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColorHint="#BBBBBB" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:id="@+id/terms"
-            android:text="@string/by_clicking_agree_and_continue_below_i_agree_to_terms_of_service_and_privacy_policy"
-            android:textSize="14sp"/>
+            android:layout_marginTop="10dp"
+            android:text="@string/forgot_password"
+            android:textColor="#6B4F3F"
+            android:textSize="14sp" />
 
         <!-- Login Button -->
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/registerbtn"
+            android:id="@+id/loginButton"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/brown_button_background"
-            android:text="@string/register"
+            android:text="@string/login"
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:padding="10dp" />
 
+        <!-- Register Link -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal">
+            android:layout_marginTop="20dp"
+            android:gravity="center">
 
             <TextView
+                android:id="@+id/dontHaveAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/already_have_an_account"/>
+                android:text="Already Have An Account? "
+                android:textColor="#666666" />
 
             <TextView
-                android:id="@+id/loginText"
+                android:id="@+id/registerLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:textColor="#705545"/>
+                android:textColor="#6B4F3F"
+                android:textStyle="bold" />
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>

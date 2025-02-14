@@ -12,10 +12,9 @@ class Signup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-
-        //on click listener for login text
-        val clickMe: TextView = findViewById(R.id.loginText)
-        clickMe.setOnClickListener {
+        setContentView(R.layout.activity_signup)
+       var lgnbtn=findViewById<TextView>(R.id.registerLink)
+        lgnbtn.setOnClickListener {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }

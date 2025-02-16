@@ -9,6 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:id="@+id/r"
         android:padding="16dp">
 
         <ImageView
@@ -34,6 +35,7 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:id="@+id/edit"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:src="@drawable/edit" />
@@ -96,6 +98,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
+                android:id="@+id/chatmove"
                 android:padding="16dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
@@ -127,6 +130,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
+                android:id="@+id/chatmove2"
                 android:padding="16dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView

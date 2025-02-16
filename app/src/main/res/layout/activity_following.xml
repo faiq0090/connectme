@@ -4,6 +4,20 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+    </androidx.appcompat.widget.Toolbar>
+
     <!-- Top Bar -->
     <LinearLayout
         android:id="@+id/topBar"

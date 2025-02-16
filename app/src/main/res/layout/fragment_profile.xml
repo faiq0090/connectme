@@ -13,25 +13,30 @@
         android:orientation="vertical">
 
         <!-- Top Bar -->
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bar"
+            android:orientation="horizontal"
             android:padding="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="My Profile"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_alignParentEnd="true"
+                android:id="@+id/editprofile"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="200dp"
                 android:src="@drawable/ic_edit"/>
-        </RelativeLayout>
+        </LinearLayout>
 
         <!-- Profile Content -->
         <LinearLayout
@@ -107,6 +112,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:id="@+id/folowers"
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:gravity="center">
@@ -115,6 +121,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="410"
+                        android:id="@+id/f1"
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
@@ -131,6 +138,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:id="@+id/following"
                     android:orientation="vertical"
                     android:gravity="center">
 
@@ -138,6 +146,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="387"
+                        android:id="@+id/f2"
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
